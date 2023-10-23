@@ -15,21 +15,21 @@ class Config(object):
     REMOVE_TAG = True
 
     # REQUIRED
-    API_KEY = "1987145368:AAHmscMc2vJCNB3ErnVf6e1Pakn9LSfWqUE"  # API key obtained from BotFather
-    OWNER_ID = "784985038"  # If you dont know, run the bot and do /id in your private chat with the bot
+    API_KEY = "6425364400:AAGE_Xg7d3uR3KaasSdmFEUdMJ3Bw6D59I4"  # API key obtained from BotFather
+    OWNER_ID = "1474271232"  # If you dont know, run the bot and do /id in your private chat with the bot
 
     # FOR AUTOMATICALLY FORWARDING MESSAGES
-    FROM_CHATS = [-1001515744522, -1001797455659]  # List of chat id's to forward messages from
-    TO_CHATS = [-1001519273319, -1001654497570, -1001349890617]  # List of chat id's to forward messages to
+    FROM_CHATS = [-1004034481895]  # List of chat id's to forward messages from
+    TO_CHATS = [-1001862629813]  # List of chat id's to forward messages to
 
     # FOR WEBHOOKS
     WEBHOOK = False
-    IP_ADDRESS = "127.0.0.1"  # Use "0.0.0.0" if using Heroku
+    IP_ADDRESS = "0.0.0.0"  # Use "0.0.0.0" if using Heroku
     URL = None  # The URL that the bot should listen to for updates
     PORT = 5000  # Port to listen on for webhooks
     CERT_PATH = None  # Path to certificate file
 
-    WORKERS = 10  # Depends on usage, 4 by default
+    WORKERS = 4  # Depends on usage, 4 by default
 
 
 class Production(Config):
