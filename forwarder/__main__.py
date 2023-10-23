@@ -81,3 +81,6 @@ def main():
 if __name__ == "__main__":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     main()
+  
+bot.add_handler(CommandHandler("start", start, filters=filters.User(OWNER_ID)))
+bot.add_handler(CommandHandler("help", help, filters=filters.User(OWNER_ID)))
